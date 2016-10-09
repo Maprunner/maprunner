@@ -1,0 +1,47 @@
+# main links links
+main:
+  - title: "O-links"
+    url: "#"
+    newtab: false
+    children:
+    - title: "Nopesport"
+      url: "http://forum.nopesport.com/viewforum.php?f=1"
+    - title: "World of O"
+      url: "http://worldofo.com/"
+    - title: "Open Orienteering Map"
+      url: "http://oomap.co.uk/"
+    - title: "BOF"
+      url: "http://www.britishorienteering.org.uk/"
+    - title: "IOF"
+      url: "http://orienteering.org/"
+    - title: "HH"
+      url: "http://www.happyherts.org.uk/"
+  - title: "Results"
+    url: "#"
+    newtab: false
+    children:
+    - title: "WOC/JWOC Database"
+      url: "wocdb/"
+    - title: "Arbor"
+      url: "/arbor/"
+    - title: "BOF Records"
+      url: "/bof-records/"
+  - title: "Routegadget"
+    url: "#"
+    newtab: false
+    children:
+    - title: "HH"
+      url: "http://www.happyherts.routegadget.co.uk/rg2"
+    - title: "Github"
+      url: "https://github.com/Maprunner/rg2"
+    - title: "RG2 statistics"
+      url: "http://www.maprunner.co.uk/rg2-stats/"
+    - title: "Routegadget UK"
+      url: "http://www.routegadget.co.uk/"
+  - title: Articles
+    url: "articles/"
+    newtab: false
+  - title: Photos
+    url: "http://www.flickr.com/photos/maprunner/sets/"
+  - title: CD Quiz
+    url: "cd/"

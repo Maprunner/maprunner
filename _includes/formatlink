@@ -1,0 +1,21 @@
+{% include base_path %}
+{% capture before %}{{ include.url | split: "://" | first }}{% endcapture %}
+{% capture after %}{{ include.url | split: "://" | last }}{% endcapture %}            
+{% assign internal = true %}
+{% if before != after %}
+  {% if before == "http" or before == "https" %}
+    {% assign internal = false %}
+  {% endif %}  
+{% endif %}
+
+{% if internal %}
+  {% capture linkurl %}{{ base_path }}/{{ include.url }}{% endcapture %}
+{% else %}
+  {% capture linkurl %}{{ include.url }}{% endcapture %}
+{% endif %}
+
+{%if include.newtab %}
+  <a href="{{ linkurl }}" target="_blank">{{ include.title }}</a>
+{% else %}
+  <a href="{{ linkurl }}">{{ include.title }}</a>
+{% endif %}
