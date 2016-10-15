@@ -23,7 +23,7 @@ main:
     - title: "WOC/JWOC Database"
       url: "wocdb/"
     - title: "Arbor"
-      url: "/arbor/"
+      url: "arbor/"
     - title: "BOF Records"
       url: "/bof-records/"
   - title: "Routegadget"

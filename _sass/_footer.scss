@@ -46,6 +46,17 @@
   }
 }
 
+.footer_left {
+  @include clearfix;
+  @include span(4 of 12);
+}
+
+.footer_right {
+  @include clearfix;
+  @include span(8 of 12 last);
+  
+}
+
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;

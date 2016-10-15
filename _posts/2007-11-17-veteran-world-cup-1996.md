@@ -9,7 +9,7 @@ tags:
   - Spain
   - WMOC
 ---
-_(The Veteran World Cup (now the World Masters) was held in Spain in 1996. Here is an extract from an O-Net article I wrote in April 1996.)_
+The Veteran World Cup (now the World Masters) was held in Spain in 1996. Here is an extract from an O-Net article I wrote in April 1996.
 
 <!--more-->
 
