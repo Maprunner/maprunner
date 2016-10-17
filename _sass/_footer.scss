@@ -6,7 +6,7 @@
   @include full();
   @include clearfix;
   /* sticky footer fix start */
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   clear: both;

@@ -25,7 +25,7 @@ main:
     - title: "Arbor"
       url: "arbor/"
     - title: "BOF Records"
-      url: "/bof-records/"
+      url: "bof-records/"
   - title: "Routegadget"
     url: "#"
     newtab: false
