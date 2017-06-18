@@ -1,0 +1,36 @@
+Options +FollowSymLinks
+
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.maprunner.co.uk/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^(.*)?wp-login\.php(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^(.*)?xmlrpc\.php(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^(.*)?wp-admin$
+RewriteRule ^(.*)$ - [R=403,L]
+
+RewriteCond %{REQUEST_URI} ^(.*)\/bof-records\/$
+RewriteRule ^(.*)$ https://www.maprunner.co.uk/arbor/champions [R=301,L]
+	
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 year"
+ExpiresByType application/javascript "access 1 month"
+ExpiresDefault "access 2 days"
+</IfModule>
+## EXPIRES CACHING ##
+
+RewriteCond %{HTTP_HOST} ^maprunner\.co\.uk$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.maprunner\.co\.uk$
+RewriteRule ^wp\-content\/uploads\/resources\/?(.*)$ "https\:\/\/www\.maprunner\.co\.uk\/resources\/$1" [R=301,L]
+

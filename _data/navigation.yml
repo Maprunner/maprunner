@@ -15,7 +15,7 @@ main:
     - title: "IOF"
       url: "http://orienteering.org/"
     - title: "HH"
-      url: "http://www.happyherts.org.uk/"
+      url: "http://www.herts-orienteering.club/"
   - title: "Results"
     url: "#"
     newtab: false

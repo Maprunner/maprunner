@@ -11,8 +11,8 @@ title                    : "Maprunner"
 title_separator          : "-"
 name                     : "Maprunner"
 description              : "Orienteering courses and resources"
-url                      : "http://localhost:4000"
-# url                      : "http://www.maprunner.co.uk"
+#url                      : "http://localhost:4000"
+url                      : "https://www.maprunner.co.uk"
 baseurl                  : ""
 repository               : "Maprunner/maprunner"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -84,7 +84,7 @@ social:
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : 
 
 
 # Site Author
@@ -112,7 +112,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "@MaprunnerGB"
   vine             :
   weibo            :
   xing             :
