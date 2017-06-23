@@ -41,6 +41,9 @@ main:
   - title: Articles
     url: "articles/"
     newtab: false
+  - title: WOC 2017
+    url: "woc2017/"
+    newtab: false
   - title: Photos
     url: "http://www.flickr.com/photos/maprunner/sets/"
   - title: CD Quiz

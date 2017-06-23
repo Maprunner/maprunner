@@ -7,6 +7,7 @@ permalink: /simon/
 author_profile: false
 ---
 ![Simon orienteering](/images/SimonErringtonAtBurnhamBeeches.png "Simon orienteering"){: .align-left}{: height: 260 width:200}
+My first orienteering event was in November 1977 whilst I was still at school, and since then I have averaged well over one event a week (2397 events and counting as at June 2017).
 
 I represented Great Britain at junior level, but could never run fast enough to make it to the top. Competitively my best results have been being [British Night Champion at M45](/british-night-champion-2009-mytchett/) in 2009, winning the [Harvester Trophy Relay](/of-night-and-light-and-the-half-light/) in 1986 with LOK, and being M40 British Relay Champion in 2005 with HH. I have also held several somewhat less prestigious titles including being Mallorcan Champion in 2004 and Queensland M40 Champion in 2005. I have travelled all over the world to orienteer, including trips to [Russia](/moscow-ringworld-1994/), [China](/china-3-day-event-1995-guangzhou/), Hong Kong, [Australia](/orienteering-on-the-woolwich-ferry/), New Zealand, [Canada](/canadian-orienteering-championships-1996/), the [USA](/world-orienteering-championships-93/), Swaziland, South Africa, Iceland and most of Europe.
 

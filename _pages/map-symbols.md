@@ -11,7 +11,7 @@ These are downloadable guides to orienteering map symbols. The files are availab
 |The ISOM 2000 map symbols are those used for normal orienteering maps, generally at 1:10,000 or 1:15,000.|The BOF school map symbols are those used for school orienteering maps in Great Britain.|The ISSOM 2007 sprint map symbols are those used for sprint orienteering maps at 1:5,000 or 1:4,000.
 |![Maprunner map symbols guide](../images/map-symbols-thumb.gif)|![Maprunner schools map symbols guide](../images/school-map-symbols-thumb.gif)|![Maprunner ISSOM 2007 sprint map symbols guide](../images/sprint-map-symbols-thumb.gif)|
 |[Download JPG](../resources/Maprunner-map-symbols.jpg)|[Download JPG](../resources/Maprunner-schools-map-symbols.jpg)|[Download JPG](../resources/Maprunner-sprint-map-symbols.jpg)|
-|[Download PDF](../resources/Maprunner-map-symbols.pdf)|[Download PDF](../resources/Maprunner-schools-map-symbols.pdf)|[Download PDF](../resources/Maprunner-sprint-map-symbols.PDF)|
+|[Download PDF](../resources/Maprunner-map-symbols.pdf)|[Download PDF](../resources/Maprunner-schools-map-symbols.pdf)|[Download PDF](../resources/Maprunner-sprint-map-symbols.pdf)|
 
 Please feel free to distribute these files unchanged or print them out for non-commercial use. Please contact me to discuss any other usage.
 
