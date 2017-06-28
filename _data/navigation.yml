@@ -42,8 +42,15 @@ main:
     url: "articles/"
     newtab: false
   - title: WOC 2017
-    url: "woc2017/"
+    url: "woc2017/#"
     newtab: false
+    children:
+    - title: "Articles"
+      url: "woc2017/articles/"
+      newtab: false
+    - title: "GB Team"
+      url: "woc2017/gb-team/"
+      newtab: false
   - title: Photos
     url: "http://www.flickr.com/photos/maprunner/sets/"
   - title: CD Quiz

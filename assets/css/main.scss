@@ -46,3 +46,19 @@
    margin: 0 10px;
    filter: opacity(50%);
 }
+
+.caption {
+  text-align: center;
+}
+
+figure {
+
+  &.fourth{
+    > a,
+    > img {
+      @include breakpoint($small) {
+        width: calc(25% - 0.5em);
+      }
+    }
+  }
+}
