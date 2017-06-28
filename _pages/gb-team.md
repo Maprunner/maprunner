@@ -27,7 +27,7 @@ gallery:
   - url: https://www.britishorienteering.org.uk/index.php?pg=240&athlete=26
     image_path: woc2017/graham-gristwood.jpg
     alt: "Graham Gristwood"
-    title: "Graham Gristwood"
+    title: "Graham Gristwood <br> (Maprunner)"
   - url: https://www.britishorienteering.org.uk/index.php?pg=240&athlete=79
     image_path: woc2017/hollie-orr.jpg
     alt: "Hollie Orr"
@@ -46,7 +46,7 @@ gallery:
     title: "Jonny Crickmore <br> (Hannu Kaasalainen)"
   - url: https://www.britishorienteering.org.uk/index.php?pg=240&athlete=90
     image_path: woc2017/kris-jones.jpg
-    alt: "Kris Jones"
+    alt: "Kris Jones <br> (Maprunner)"
     title: "Kris Jones"
   - url: https://www.britishorienteering.org.uk/index.php?pg=240&athlete=157
     image_path: woc2017/megan-carter-davies.jpg
