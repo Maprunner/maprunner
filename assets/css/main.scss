@@ -51,10 +51,14 @@
   text-align: center;
 }
 
-figure {
+.no-margin {
+  margin: 0px;
+}
 
+figure {
+  
   &.fourth{
-    > a,
+    > figure,
     > img {
       @include breakpoint($small) {
         width: calc(25% - 0.5em);
