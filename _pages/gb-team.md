@@ -35,7 +35,7 @@ gallery:
   - url: https://www.britishorienteering.org.uk/index.php?pg=240&athlete=58
     image_path: woc2017/jess-tullie.jpg
     alt: "Jess Tullie"
-    title: "Jess Tullie"
+    title: "Jess Tullie <br> (Gary Murison)"
   - url: https://www.britishorienteering.org.uk/index.php?pg=240&athlete=172
     image_path: woc2017/jo-shepherd.jpg
     alt: "Jo Shepherd"
