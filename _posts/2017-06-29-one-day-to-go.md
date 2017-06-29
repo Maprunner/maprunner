@@ -2,7 +2,7 @@
 title: 'One day to go...'
 date: 2017-06-29T00:00:00+00:00
 author: james
-permalink: /woc2017/articles/one-day-to-go
+permalink: /one-day-to-go/
 excerpt: 'So, just one day left until the start of the 34th World Orienteering Championships in Tartu, Estonia.'
 category:
   - WOC-2017
