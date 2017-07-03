@@ -120,4 +120,4 @@ gallery:
 # World Orienteering Championships 2017 : Tartu, Estonia
 
 ## WOC 2017 GB Team
-{% include gallery class="fourth" %}
+{% include gallery class="fourth" type='team' %}

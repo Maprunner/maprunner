@@ -27,25 +27,27 @@
         alt="{% if img.alt %}{{ img.alt }}{% endif %}">
         <figcaption class="caption">
           {{img.title}}
-          <br>
-          <a href="https://www.britishorienteering.org.uk/index.php?pg=240&athlete={{img.bof}}">
-            <i class="fa fa-user"></i> BOF Profile
-          </a>
-          <br>
-          <a href="https://www.maprunner.co.uk/wocdb/person/{{img.database}}">
-            <i class="fa fa-database"></i> WOC records
-          </a>
-          {% if img.website %}
+          {% if include.type == 'team' %}
             <br>
-            <a href="{{img.website}}">
-              <i class="fa fa-globe"></i> Website
+            <a href="https://www.britishorienteering.org.uk/index.php?pg=240&athlete={{img.bof}}">
+              <i class="fa fa-user"></i> BOF Profile
             </a>
-          {% endif %}
-          {% if img.twitter %}
             <br>
-            <a href="https://twitter.com/{{img.twitter}}">
-              <i class="fa fa-twitter"></i> Twitter
+            <a href="https://www.maprunner.co.uk/wocdb/person/{{img.database}}">
+              <i class="fa fa-database"></i> WOC records
             </a>
+            {% if img.website %}
+              <br>
+              <a href="{{img.website}}">
+                <i class="fa fa-globe"></i> Website
+              </a>
+            {% endif %}
+            {% if img.twitter %}
+              <br>
+              <a href="https://twitter.com/{{img.twitter}}">
+                <i class="fa fa-twitter"></i> Twitter
+              </a>
+            {% endif %}
           {% endif %}
         </figcaption>
       </figure>
