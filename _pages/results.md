@@ -31,6 +31,6 @@ author_profile: false
 | Denmark | 1 | 2 | 0 | 3 |
 | Switzerland | 1 | 0 | 1 | 2 |
 | Norway | 1 | 0 | 0 | 1 |
-| Russia | 0 | 1 | 2 | 3 |
+| Russia | 0 | 2 | 2 | 4 |
 | France | 0 | 1 | 0 | 1 |
 
