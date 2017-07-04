@@ -1,0 +1,25 @@
+{% include base_path %}
+
+{% assign race = site.data.woc-results[include.type] %}
+
+<table style="text-align: center;">
+  <thead>
+    <tr>
+      <td><strong>Class</strong></td>
+      <td><i class="fa fa-circle" style="color:gold;"></i></td>
+      <td><i class="fa fa-circle" style="color:silver;"></i></td>
+      <td><i class="fa fa-circle" style="color:saddlebrown;"></i></td>
+    </tr>
+  </thead>
+  <tbody>
+    {% for result in race %}
+      <tr>
+        <td>{{ result.name }}</td>
+        <td>{{ result.first }}</td>
+        <td>{{ result.second }}</td>
+        <td>{{ result.third }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+  

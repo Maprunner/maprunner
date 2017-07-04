@@ -45,6 +45,9 @@ main:
     url: "woc2017/#"
     newtab: false
     children:
+    - title: "Results"
+      url: "woc2017/results/"
+      newtab: false
     - title: "Articles"
       url: "woc2017/articles/"
       newtab: false
