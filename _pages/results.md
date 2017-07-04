@@ -27,8 +27,10 @@ author_profile: false
 
 | Country | <i class="fa fa-circle" style="color:gold;"> | <i class="fa fa-circle" style="color:silver;"> | <i class="fa fa-circle" style="color:saddlebrown;"> | Total |
 |::|:----:|:------:|:------:|:-----:|
-| Denmark | 1 | 1 | 0 | 2 |
-| Sweden | 1 | 0 | 1 | 2 |
+| Sweden | 2| 0 | 2 | 4 |
+| Denmark | 1 | 2 | 0 | 3 |
 | Switzerland | 1 | 0 | 1 | 2 |
-| Russia | 0 | 1 | 1 | 2 |
+| Norway | 1 | 0 | 0 | 1 |
+| Russia | 0 | 1 | 2 | 3 |
 | France | 0 | 1 | 0 | 1 |
+
