@@ -1,6 +1,6 @@
 {% include base_path %}
 
-{% assign race = site.data.woc-results[include.type] %}
+{% assign event = site.data.woc-results[include.type] %}
 
 <table style="text-align: center;">
   <thead>
@@ -12,12 +12,12 @@
     </tr>
   </thead>
   <tbody>
-    {% for result in race %}
+    {% for race in event %}
       <tr>
-        <td>{{ result.name }}</td>
-        <td>{{ result.first }}</td>
-        <td>{{ result.second }}</td>
-        <td>{{ result.third }}</td>
+        <td>{{ race.name }}</td>
+        {% for data in race.result %}
+          <td>{{ data }}</td>
+        {% endfor %}
       </tr>
     {% endfor %}
   </tbody>
