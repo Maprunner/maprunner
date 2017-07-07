@@ -39,11 +39,11 @@ middle:
 relay:
   - name: "Men"
     result:
-      - ""
-      - ""
-      - ""
+      - "Norway"
+      - "France"
+      - "Sweden"
   - name: "Women"
     result:
-      - ""
-      - ""
-      - ""
+      - "Sweden"
+      - "Russia"
+      - "Finland"
