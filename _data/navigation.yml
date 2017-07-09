@@ -41,18 +41,12 @@ main:
   - title: Articles
     url: "articles/"
     newtab: false
-  - title: WOC 2017
-    url: "woc2017/#"
+  - title: "JWOC 2017"
+    url: "jwoc2017/#"
     newtab: false
     children:
-    - title: "Results"
-      url: "woc2017/results/"
-      newtab: false
-    - title: "Articles"
-      url: "woc2017/articles/"
-      newtab: false
-    - title: "GB Team"
-      url: "woc2017/gb-team/"
+    - title: "WOC 2017"
+      url: "woc2017/#"
       newtab: false
   - title: Photos
     url: "http://www.flickr.com/photos/maprunner/sets/"
