@@ -4,6 +4,8 @@ main:
     url: "#"
     newtab: false
     children:
+    - title: "On The Red Line"
+      url: "https://www.ontheredline.org.uk"
     - title: "Nopesport"
       url: "http://forum.nopesport.com/viewforum.php?f=1"
     - title: "World of O"
@@ -41,8 +43,8 @@ main:
   - title: Articles
     url: "articles/"
     newtab: false
-  - title: "World Games 2017"
-    url: "world-games2017/#"
+  - title: "World Champs 2018"
+    url: "woc2018/#"
     newtab: false
     children:
     - title: "WOC 2017"
@@ -50,6 +52,9 @@ main:
       newtab: false
     - title: "JWOC 2017"
       url: "jwoc2017/#"
+      newtab: false
+    - title: "World Games 2017"
+      url: "world-games2017/#"
       newtab: false
   - title: Photos
     url: "http://www.flickr.com/photos/maprunner/sets/"
