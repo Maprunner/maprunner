@@ -169,7 +169,7 @@ GEM
     net-dns (0.8.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
-    nokogiri (1.8.0-x64-mingw32)
+    nokogiri (1.8.2-x64-mingw32)
       mini_portile2 (~> 2.2.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)

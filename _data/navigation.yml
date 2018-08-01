@@ -43,7 +43,7 @@ main:
   - title: Articles
     url: "articles/"
     newtab: false
-  - title: "World Champs 2018"
+  - title: "WOC 2018"
     url: "woc2018/#"
     newtab: false
     children:
