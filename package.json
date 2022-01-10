@@ -1,24 +1,38 @@
 {
-  "name": "Maprunner",
-  "version": "0.1.0",
-  "description": "Maprunner website",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Maprunner/maprunner.git"
-  },
+  "name": "maprunner",
   "author": "Simon Errington",
   "license": "MIT",
-  "engines": {
-    "node": ">= 0.10.0"
+  "scripts": {
+    "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
+    "dbgbuild:11ty": "set DEBUG=Eleventy* & eleventy --quiet",
+    "build:11ty": "eleventy --quiet",
+    "build:rollup": "rollup -c",
+    "clean": "rimraf dist",
+    "dev": "npm-run-all clean build:* -p dev:*",
+    "dev:11ty": "eleventy --serve",
+    "dev:rollup": "rollup -c -w"
   },
   "devDependencies": {
-    "npm-run-all": "^1.7.0",
-    "onchange": "^2.2.0",
-    "uglify-js": "^2.6.1"
-  },
-  "scripts": {
-    "uglify": "uglifyjs assets/js/vendor/jquery/jquery-1.12.4.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.nav-top.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/plugins/stickyfill.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify"
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^1.0.0",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-replace": "^2.4.2",
+    "autoprefixer": "^10.4.1",
+    "cross-env": "^7.0.3",
+    "eleventy-plugin-excerpt": "^1.1.2",
+    "eleventy-plugin-safe-external-links": "^0.1.5",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.5",
+    "postcss-import": "^14.0.2",
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.48.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-svg": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "slug": "^4.1.0",
+    "tailwindcss": "^3.0.11"
   }
 }

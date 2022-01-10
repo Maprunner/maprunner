@@ -1,0 +1,49 @@
+.tag {
+  @apply inline-block px-2 py-1 mr-2 mb-2 text-sm font-bold rounded lowercase text-mygray-333 bg-teal-500 border-2 border-solid border-transparent;
+}
+
+.tag:hover {
+  color: white;
+  animation: tag-hover 400ms both;
+}
+
+@keyframes tag-hover {
+  100% {
+    @apply border-white bg-teal-600 underline;
+  }
+}
+
+.tag:before {
+  content: '#';
+}
+
+.tagscloud {
+  @apply mt-2 p-0 flex flex-wrap items-center justify-evenly list-none bg-gray-300 dark:bg-gray-800 rounded-lg shadow-lg;
+
+  a {
+    @apply text-white no-underline border-2 border-solid border-transparent rounded-lg inline-block m-1 p-1 whitespace-nowrap;
+  }
+  a:hover {
+    animation: tag-hover 500ms both;
+  }
+
+  a.tag1 {
+    @apply bg-green-900;
+  }
+
+  a.tag2 {
+    @apply bg-green-800;
+  }
+
+  a.tag3 {
+    @apply bg-green-700;
+  }
+
+  a.tag4 {
+    @apply bg-green-600;
+  }
+
+  a.tag5 {
+    @apply bg-green-500;
+  }
+}

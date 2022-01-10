@@ -1,0 +1,35 @@
+---
+permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug }}{% endif %}/index.html"
+---
+
+{% extends 'page.njk' %}
+{% block body %}
+  <p>{{url}}</p>
+  <div>
+    <h1>{{ title }}</h1>
+
+    {% if excerpt %}
+      <p class="italic mb-4">{{ excerpt }}</p>
+    {% endif %}
+
+    {% if date %}
+      <p class="text-sm italic">
+        Posted on
+        <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
+    {% endif %}
+
+    <div class="post">
+      {{ content | safe }}
+    </div>
+
+    {% if tags %}
+      <div class="mb-2">
+        {% for tag in tags %}
+          {%- if tag !== "post" -%}
+            <a class="tag {{ tag | replace('.', '') }}" href="{{ site.baseUrl }}tag/{{ tag }}">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

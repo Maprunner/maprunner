@@ -1,0 +1,24 @@
+---
+pagination:
+  data: collections.article
+  size: 100
+  alias: articles
+  reverse: true
+permalink: "/articles/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+
+{% extends 'page.njk' %}
+{% block body %}
+  <h1>All articles</h1>
+  <div class="max-w-screen-xl mt-4 mx-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    {% for article in articles %}
+      <div class="px-4 py-4 bg-gray-400 dark:bg-gray-800 rounded-lg shadow-lg">
+        <h2>
+          <a href="{{ article.url }}">{{ article.data.title }}</a>
+        </h2>
+        <p class="text-sm italic my-4">{{ article.data.date | dateDisplay}}</p>
+        <div class="text-base">{% excerpt article %}</div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

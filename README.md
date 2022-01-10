@@ -1,13 +1,12 @@
 # Maprunner
 
-Source files for Maprunner website.
+Built with [11ty](https://www.11ty.dev/) and [Tailwind CSS](https://tailwindcss.com/docs).
 
-To test locally:
+# Running locally
 
-`bundle exec jekyll serve`
+- npm run dev
 
-To build:
+## Deploying
 
-`bundle exec jekyll build`
-
-Then sync the _site folder with the website via FTP.
+- npm run build
+- Sync dist to www.maprunner.co.uk

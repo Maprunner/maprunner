@@ -1,0 +1,12 @@
+{
+  "james": {
+    "name": "James Errington",
+    "avatar": "james.jpeg",
+    "location": "London"
+  },
+  "simon": {
+    "name": "Simon Errington",
+    "avatar": "simon.png",
+    "location": "St Albans"
+  }
+}

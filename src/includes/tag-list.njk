@@ -1,0 +1,25 @@
+<div class="mt-4 mx-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+  {% for tag in tags %}
+    <div class="flex flex-col flex-1 px-4 py-4 my-4 bg-gray-400 dark:bg-gray-800 rounded-lg shadow-lg">
+      <div class="flex-1">
+        <h1>
+          <a href="{{ tag.url | url }}">{{ tag.data.title }}</a>
+        </h1>
+        <span datetime="{{ tag.data.date }}">
+          {{ tag.data.date | dateDisplay }}
+        </span>
+        <div class="my-4">
+          {% for tag in tag.data.tags %}
+            {% if tag !== "tag" %}
+              {% if tag !== "post" %}
+                {% if tag !== "article" %}
+                  <a href="{{ site.baseUrl }}tag/{{ tag | slugifyTag }}"><span class="tag">{{ tag }}</span></a>
+                {% endif %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

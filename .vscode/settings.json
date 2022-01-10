@@ -1,0 +1,16 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "javascript.preferences.quoteStyle": "single",
+  "[njk]": {
+    "editor.defaultFormatter": "eseom.nunjucks-template"
+  },
+  "spellright.documentTypes": [
+  
+    "markdown",
+    "latex",
+    "plaintext"
+  ],
+  "css.validate": false
+}
