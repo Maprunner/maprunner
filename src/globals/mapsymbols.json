@@ -1,0 +1,37 @@
+{
+  "specs": [
+    {
+      "title": "Normal (ISOM 2017-2)",
+      "intro": "The ISOM 2017-2 map symbols are used for normal orienteering maps, generally at 1:10,000 or 1:15,000.",
+      "alt": "Maprunner map symbols guide",
+      "src": "/images/map-symbols-thumb.gif",
+      "jpg": "../resources/Maprunner-map-symbols-2017.jpg",
+      "pdf": "../resources/Maprunner-map-symbols-2017.pdf"
+    },
+    {
+      "title": "Schools (BOF)",
+      "intro": "The BOF school map symbols are used for school orienteering maps in Great Britain.",
+      "alt": "Maprunner schools map symbols guide",
+      "src": "/images/school-map-symbols-thumb.gif",
+      "jpg": "../resources/Maprunner-schools-map-symbols.jpg",
+      "pdf": "../resources/Maprunner-schools-map-symbols.pdf"
+    },
+    {
+      "title": "Sprint (ISSprOM 2019)",
+      "intro": "The ISSprOM 2019 sprint map symbols are used for sprint orienteering maps at 1:4,000.",
+      "alt": "Maprunner ISSOM 2007 sprint map symbols guide",
+      "src": "/images/sprint-map-symbols-thumb.gif",
+      "jpg": "../resources/Maprunner-sprint-map-symbols.jpg",
+      "pdf": "../resources/Maprunner-sprint-map-symbols.pdf"
+    }
+  ],
+  "cds": [
+    {
+      "title": "Maprunner IOF Control Descriptions 2018",
+      "alt": "Maprunner IOF Control Descriptions 2018",
+      "src": "/images/IOF-control-descriptions-thumb.gif",
+      "gif": "../resources/Maprunner-IOF-control-descriptions-2018.gif",
+      "pdf": "../resources/Maprunner-IOF-control-descriptions-2018.pdf"
+    }
+  ]
+}

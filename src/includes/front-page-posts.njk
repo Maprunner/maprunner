@@ -1,0 +1,22 @@
+<div class="mt-4 mx-auto grid justify-center grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  {% for post in collections.frontposts %}
+    <div class="flex flex-col flex-1 px-4 py-4 bg-gray-400 dark:bg-gray-800 rounded-lg shadow-lg">
+      <div class="front-page flex-1">
+        <div class="relative pb-5/6">
+          {% image post.data.image, post.data.title, "380px" %}
+        </div>
+        <div>
+          <h2>{{ post.data.title }}</h2>
+          {{ post.templateContent | safe }}
+        </div>
+        </div>
+        {%- if post.data.button %}
+          <div class="my-4">
+            <a href="{{ post.data.link }}" class="read-more text-mygray-333 dark:text-mygray-333 hover:text-white">
+              {{ post.data.button }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>

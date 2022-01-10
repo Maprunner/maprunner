@@ -1,3 +1,0 @@
-{% include base_path %}
-
-<audio src="{{include.file | prepend: "/audio/" | prepend: base_path }}.mp3" controls preload></audio>

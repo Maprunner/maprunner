@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+    <meta name="description" content="{% if excerpt %}{{ excerpt }}{% else %}{{ site.description }}{% endif %}">
+    {% if image %}
+      {% set ogimage = ["images/", name, "/", image] | join | url | replace(".jpeg", "-1200.jpeg") %}
+    {% else %}
+      {% set ogimage = "images/battersea.jpeg" | url %}
+    {% endif %}
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+    <meta property="og:description" content="{% if excerpt %}{{ excerpt }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseUrl }}{{ ogimage }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url | url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta name="twitter:image:alt" content="World Cup orienteering at Battersea Park">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseUrl }}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseUrl }}favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>
+      {% if metaTitle %}{{ metaTitle }}
+      {% else %}{{ title }}
+      {% endif %}
+      {% if metaTitle or title %}
+        |
+      {% endif %}{{ site.name }}</title>
+
+    <link rel="stylesheet" href="{{ site.baseUrl }}assets/main.bundle.css">
+    {% block head %}{% endblock %}
+  </head>
+  <body class="flex flex-col min-h-screen">
+
+    {% include 'header.njk' %}
+    <main class="container mx-auto max-w-screen-xl px-4 md:px-8 pb-4 md:pb-8 flex-grow">
+      {% block body %}{% endblock %}
+    </main>
+    {% include 'footer.njk' %}
+    <script src="{{ site.baseUrl }}assets/main.bundle.js"></script>
+  </body>
+</html>

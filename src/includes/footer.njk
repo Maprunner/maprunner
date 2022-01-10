@@ -1,0 +1,65 @@
+<footer class="mt-4 mb-6 pt-4 pb-10 border-t-4 border-teal-600 bg-gray-400 dark:bg-gray-900">
+  <div class="container max-w-screen-xl mx-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    <div class="flex flex-col flex-1 px-4 pb-4">
+      <div class="footer-header">About</div>
+      <br/>
+      <a href="{{ '/' | url }}about/">Maprunner</a>
+      <br/>
+      <a href="{{ '/' | url }}helen/">Helen</a>
+      <br/>
+      <a href="{{ '/' | url }}simon/">Simon</a>
+    </div>
+    <div class="flex flex-col flex-1 px-4 pb-4">
+      <div class="footer-header">Resources</div>
+      <br/>
+      <a href="{{ '/' | url }}map-symbols/">Map Symbols</a>
+      <br/>
+      <a href="{{ '/' | url }}iof-control-descriptions/">IOF Control Descriptions</a>
+      <br/>
+      <a href="{{ '/' | url }}cd/">Control Description quiz</a>
+    </div>
+    <div class="flex flex-col flex-1 px-4 pb-4">
+      <div class="footer-header">Results</div>
+      <br/>
+      <a href="{{ '/' | url }}wocdb/">WOC/JWOC Database</a>
+      <br/>
+      <a href="{{ '/' | url }}arbor/">Arbor</a>
+      <br/>
+      <a href="{{ '/' | url }}bof-records/">BOF Records</a>
+    </div>
+  </div>
+  <div class="flex flex-wrap min-w-full justify-center text-sm">
+    {% if site.twitter.user %}
+      <div class="icon mx-2" aria-hidden="true">
+        {% include "twitter.svg" %}
+      </div>
+      <a href="https://twitter.com/{{ site.twitter.user }}">
+        Twitter</a>
+    {% endif %}
+    {% if site.facebook.user %}
+      <div class="icon mx-2" aria-hidden="true">
+        {% include "facebook.svg" %}
+      </div>
+      <a href="https://facebook.com/{{ site.facebook.user }}">
+        Facebook</a>
+    {% endif %}
+    {% if site.github.user %}
+      <div class="icon mx-2" aria-hidden="true">
+        {% include "github.svg" %}
+      </div>
+      <a href="http://github.com/{{ site.github.user }}">
+        GitHub</a>
+    {% endif %}
+    <div class="icon flag-icon"></div>
+    <p class="text-sm">Built with
+      <a target="_blank" href="https://www.11ty.dev">11ty</a>
+    </p>
+    <div class="icon flag-icon"></div>
+    <p class="text-sm">
+      © Copyright
+      {% currentYear %}
+      <a target="_blank" href="https://www.maprunner.co.uk">
+        Maprunner</a>
+    </p>
+  </div>
+</footer>

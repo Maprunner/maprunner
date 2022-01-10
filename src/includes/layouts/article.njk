@@ -1,0 +1,90 @@
+---
+permalink: "{% if path %}{{ path | slug }}{% else %}{{'/articles/'}}{{ title | slug }}{% endif %}/index.html"
+---
+
+{% extends 'page.njk' %}
+{% set nextPost = collections['article'] | getNextCollectionItem(page) %}
+{% set previousPost = collections['article'] | getPreviousCollectionItem(page) %}
+{% set who = authors[author] %}
+{% block body %}
+  <div class="flex flex-wrap">
+    <div class="w-full lg:w-9/12 pr-4 pb-4">
+      <h1>{{ title }}</h1>
+      {% if date %}
+        <p class="text-sm italic my-4">
+          Posted on
+          <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
+      {% endif %}
+      <div class="content">
+        {{ content | safe }}
+        {% if top_10 %}
+          {% for item in top_10 %}
+            <h2 class="clear-both">{{loop.index }}
+              -
+              {{ item.title }}</h2>
+            <div>
+              {% if item.image %}
+                <img src="/images/{{ name }}/{{ item.image }}" class="m-auto float-left" alt="{{ pic.alt }}"/>
+              {% endif %}
+              {{ item.text }}
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+      {% if nextPost %}
+        <p class="uppercase text-xs mt-6">Next &gt;&gt;</p>
+        <p class="font-bold mb-2">
+          <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+        </p>
+      {% endif %}
+      {% if previousPost %}
+        <p class="uppercase text-xs mt-6">&lt;&lt; previous</p>
+        <p class="font-bold">
+          <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
+        </p>
+      {% endif %}
+    </div>
+    <div class="w-full lg:w-3/12 p-4 bg-gray-400 dark:bg-gray-800">
+      <div class="author">
+        <img src="/images/{{ who.avatar }}" alt="{{ who.name }}">
+        <div class="flex my-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+          </svg>
+          <p class="pl-4">
+            {{ who.name }}</p>
+        </div>
+        <div class="flex my-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+          <p class="pl-4">
+            {{ who.location }}</p>
+        </div>
+      </div>
+      {% if tags %}
+        <div class="my-4">
+          {% for tag in tags %}
+            {% if tag !== "article" %}
+              <a href="{{ site.baseUrl }}tag/{{ tag | slugifyTag }}"><span class="tag">{{ tag }}</span></a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if nextPost %}
+        <p class="uppercase text-xs mt-6">Next &gt;&gt;</p>
+        <p class="font-bold mb-2">
+          <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+        </p>
+      {% endif %}
+      {% set previousPost = collections['article'] | getPreviousCollectionItem(page) %}
+      {% if previousPost %}
+        <p class="uppercase text-xs mt-6">&lt;&lt; previous</p>
+        <p class="font-bold">
+          <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
+        </p>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

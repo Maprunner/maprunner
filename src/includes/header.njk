@@ -1,0 +1,16 @@
+<header class="bg-gray-900">
+  <div class="container mx-auto max-w-screen-xl px-8 flex-grow">
+    {# {% banner "maprunnerbanner.jpeg", "Maprunner banner", "(max-width: 1280px) 100vw, 1280px" %} #}
+    {# hard coded to get around problem with eleventy-image usage of smallest option as default img src #}
+    <picture>
+      <source type="image/webp"
+              srcset="/images/maprunnerbanner-380w.webp 380w, /images/maprunnerbanner-768w.webp 768w, /images/maprunnerbanner-1280w.webp 1280w"
+              sizes="(max-width: 1280px) 100vw, 1280px">
+      <source type="image/jpeg"
+              srcset="/images/maprunnerbanner-380w.jpeg 380w, /images/maprunnerbanner-768w.jpeg 768w, /images/maprunnerbanner-1280w.jpeg 1280w"
+              sizes="(max-width: 1280px) 100vw, 1280px">
+      <img alt="Maprunner banner" src="/images/maprunnerbanner-1280w.jpeg" width="1280" height="148">
+    </picture>
+    {% include 'navbar.njk' %}
+  </div>
+</header>

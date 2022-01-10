@@ -1,0 +1,73 @@
+{
+  "main": [
+    {
+      "label": "O-Links",
+      "url": "",
+      "dropdown": [
+        {
+          "title": "Nopesport",
+          "link": "http://forum.nopesport.com/viewforum.php?f=1"
+        },
+        {
+          "title": "On The Red Line",
+          "link": "https://www.ontheredline.org.uk"
+        },
+        { "title": "Open Orienteering Map", "link": "http://oomap.co.uk/" },
+        { "title": "BOF", "link": "http://www.britishorienteering.org.uk/" },
+        { "title": "IOF", "link": "https://orienteering.sport/" },
+        { "title": "HH", "link": "http://www.herts-orienteering.club/" },
+        { "title": "World of O", "link": "http://worldofo.com/" }
+      ]
+    },
+    {
+      "label": "Results",
+      "url": "",
+      "dropdown": [
+        {
+          "title": "WOC/JWOC Database",
+          "link": "wocdb/"
+        },
+        {
+          "title": "Arbor",
+          "link": "arbor/"
+        },
+        { "title": "BOF Records", "link": "bof-records/" }
+      ]
+    },
+    {
+      "label": "Routegadget",
+      "url": "",
+      "dropdown": [
+        {
+          "title": "HH",
+          "link": "https://www.happyherts.routegadget.co.uk/rg2"
+        },
+        {
+          "title": "Github",
+          "link": "https://github.com/Maprunner/rg2"
+        },
+        {
+          "title": "RG2 statistics",
+          "link": "https://www.maprunner.co.uk/rg2-stats/"
+        },
+        { "title": "Routegadget UK", "link": "https://www.routegadget.co.uk/" }
+      ]
+    },
+    {
+      "label": "Articles",
+      "url": "articles"
+    },
+    {
+      "label": "Tags",
+      "url": "tags/"
+    },
+    {
+      "label": "CD Quiz",
+      "url": "cd/"
+    },
+    {
+      "label": "About",
+      "url": "about/"
+    }
+  ]
+}

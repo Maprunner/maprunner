@@ -1,0 +1,35 @@
+---
+layout: post
+permalink: 'map-symbols/'
+title: 'Orienteering Map Symbols'
+excerpt: "Maprunner's downloadable guides to orienteering map symbols."
+image: 'mapsymbols.jpg'
+---
+These are downloadable guides to orienteering map symbols. The files are available as jpg images or PDFs and are designed for printing at A4 size. If you are having trouble then try right clicking and select “Save Link As….” (or whatever your browser equivalent is) to copy the file to your computer first.
+
+<div class="flex flex-col sm:flex-row content-evenly mb-4">
+  <div class="mt-4 mx-auto grid justify-center grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+    {% for spec in mapsymbols.specs %}
+
+      <div class="flex flex-col flex-1 px-4 py-4 bg-gray-400 dark:bg-gray-800 rounded-lg shadow-lg">
+        <h3 class="text-center">{{ spec.title }}</h3>
+        <p class="text-center">{{ spec.intro }}</p>
+        <img class="mx-auto my-4" width="200px" src={{ spec.src }} alt={{ spec.alt }}></img>
+        <a href="{{ spec.jpg }}" class="text-center">Download JPG</a>
+        <a href="{{ spec.pdf }}" class="text-center">Download PDF</a>
+      </div>
+
+    {% endfor %}
+
+  </div>
+</div>
+
+
+Please feel free to distribute these files unchanged or print them out for non-commercial use. Please contact me to discuss any other usage.
+
+The ISOM 2017-2 specification and ISSprOM 2018 specification are available from the <a href="https://orienteering.sport/iof/mapping/">IOF mapping web page</a>.
+
+The <a href="http://www.britishorienteering.org.uk/images/uploaded/downloads/mappers_schoolmappingspecifications.pdf">BOF Specification for School Orienteering Maps</a> is available from the <a href="http://www.britishorienteering.org.uk/">BOF web site</a>.
+
+You might also want to download the <a href="../iof-control-descriptions">Maprunner Guide to IOF Control Descriptions</a>.

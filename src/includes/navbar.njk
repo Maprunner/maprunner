@@ -1,0 +1,54 @@
+<nav class="relative">
+  <div class="w-full flex justify-between">
+    <a class="text-xl text-yellow-600 pt-4 no-underline hover:text-white hover:no-underline" href="{{ '/' | url }}">
+      Maprunner
+    </a>
+    <div class="flex justify-end">
+      <div class="block md:hidden pt-4">
+        <button
+          id="nav-toggle"
+          class="flex items-center px-3 py-2 border rounded text-grey border-grey-dark hover:text-white hover:border-white">
+          <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+            <title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden md:flex justify-end flex-1 items-end">
+        {% for item in nav.main %}
+          {% if item.dropdown %}
+            <div class="dropdown">
+              <a href="#" class="relative block p-4 text-base font-bold hover:bg-blue-800 hover:text-white hover:underline">{{ item.label }}</a>
+              <div class="hidden flex-col absolute bg-blue-800 text-gray-300">
+                {% for link in item.dropdown %}
+                  <a href="{{ site.baseUrl }}{{ link.link }}" target="_blank" class="block p-2 hover:bg-blue-600 text-white hover:underline">{{ link.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% else %}
+            <a href="{{ site.baseUrl }}{{ item.url }}" class="relative block px-2 py-4 text-base font-bold hover:bg-blue-800 hover:text-white hover:underline">{{ item.label }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="pl-2 py-4">
+        <img id="color-scheme-toggle" class="cursor-pointer" width="24px" height="24px" src="{{ '/images/light.svg' | url }}" alt="toggle light mode"></li>
+      </div>
+    </div>
+  </div>
+  <div
+    id="nav-content"
+    class="hidden rounded mt-2 p-2 bg-gray-300 overflow-hidden"
+    role="menu"
+    aria-orientation="vertical"
+    aria-labelled-by="main-menu">
+    {% for item in nav.main %}
+      {% if item.dropdown %}
+        <span class="text-gray-800 block font-bold" role="menuitem">{{ item.label }}</span>
+        {% for link in item.dropdown %}
+          <a href="{{ site.baseUrl }}{{ item.url }}" class="ml-4 block hover:text-gray-800" role="menuitem">{{ link.title }}</a>
+        {% endfor %}
+      {% else %}
+        <a href="{{ site.baseUrl }}{{ item.url }}" class="block font-bold hover:text-gray-800" role="menuitem">{{ item.label }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</nav>

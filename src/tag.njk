@@ -1,0 +1,24 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  addAllPagesToCollections: false
+  filter:
+    - all
+    - article
+    - post
+    - frontpost
+eleventyComputed:
+  title: "{{ tag }}"
+permalink: /tag/{{ tag | slugifyTag }}/
+---
+
+{% extends 'page.njk' %}
+
+{% block body %}
+  <p class="text-center text-lg italic m-6">Articles filtered by
+    <span class="font-bold text-yellow-600">{{ tag }}</span></p>
+  {% set tags = collections[tag] | reverse %}
+  {% include "tag-list.njk" %}
+{% endblock %}
