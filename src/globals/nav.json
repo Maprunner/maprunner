@@ -25,13 +25,16 @@
       "dropdown": [
         {
           "title": "WOC/JWOC Database",
-          "link": "wocdb/"
+          "link": "https://www.maprunner.co.uk/wocdb/"
         },
         {
           "title": "Arbor",
-          "link": "arbor/"
+          "link": "https://www.maprunner.co.uk/arbor/"
         },
-        { "title": "BOF Records", "link": "bof-records/" }
+        {
+          "title": "BOF Records",
+          "link": "https://www.maprunner.co.uk/bof-records/"
+        }
       ]
     },
     {
