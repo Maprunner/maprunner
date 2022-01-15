@@ -25,7 +25,11 @@
               </div>
             </div>
           {% else %}
-            <a href="{{ site.baseUrl}}{{ item.url }}" class="relative block px-2 py-4 text-base font-bold hover:bg-blue-800 hover:text-white hover:underline">{{ item.label }}</a>
+            {% if item.link %}
+              <a href="{{ item.link }}" class="relative block px-2 py-4 text-base font-bold hover:bg-blue-800 hover:text-white hover:underline">{{ item.label }}</a>
+            {% else %}
+              <a href="{{ site.baseUrl}}{{ item.url }}" class="relative block px-2 py-4 text-base font-bold hover:bg-blue-800 hover:text-white hover:underline">{{ item.label }}</a>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </div>
@@ -47,7 +51,11 @@
           <a href="{{ item.url }}" class="ml-4 block hover:text-gray-800" role="menuitem">{{ link.title }}</a>
         {% endfor %}
       {% else %}
-        <a href="{{ site.baseUrl }}{{ item.url }}" class="block font-bold hover:text-gray-800" role="menuitem">{{ item.label }}</a>
+        {% if item.link %}
+          <a href="{{ item.link }}" class="block font-bold hover:text-gray-800" role="menuitem">{{ item.label }}</a>
+        {% else %}
+          <a href="{{ site.baseUrl }}{{ item.url }}" class="block font-bold hover:text-gray-800" role="menuitem">{{ item.label }}</a>
+        {% endif%}
       {% endif %}
     {% endfor %}
   </div>
