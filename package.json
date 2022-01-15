@@ -13,7 +13,7 @@
     "dev:rollup": "rollup -c -w"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-img": "^1.0.0",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@rollup/plugin-commonjs": "^17.1.0",
