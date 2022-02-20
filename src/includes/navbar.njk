@@ -48,7 +48,7 @@
       {% if item.dropdown %}
         <span class="text-gray-800 block font-bold" role="menuitem">{{ item.label }}</span>
         {% for link in item.dropdown %}
-          <a href="{{ item.url }}" class="ml-4 block hover:text-gray-800" role="menuitem">{{ link.title }}</a>
+          <a href="{{ link.link }}" class="ml-4 block hover:text-gray-800" role="menuitem">{{ link.title }}</a>
         {% endfor %}
       {% else %}
         {% if item.link %}
