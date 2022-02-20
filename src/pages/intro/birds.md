@@ -2,7 +2,7 @@
 tags: frontpost
 order: 8
 title: British Birds
-image: red-kite.jpg
+image: red-kite.jpeg
 button: false
 ---
 
