@@ -2,9 +2,45 @@ module.exports = (config) => {
   const siteSettings = require('./src/globals/site.json')
   const pluginSafeExternalLinks = require('eleventy-plugin-safe-external-links')
   const eleventyNavigationPlugin = require('@11ty/eleventy-navigation')
+  const sprintdata = require('./src/globals/sprintdata.json')
   const excerpt = require('eleventy-plugin-excerpt')
   const Image = require('@11ty/eleventy-img')
   const path = require('path')
+
+  function sprintResultShortcode(year, race) {
+    let html = '<div class="result-table">'
+    let data = sprintdata.filter(
+      (res) =>
+        parseInt(res.year, 10) === year &&
+        res.race === race &&
+        (parseInt(res.pos, 10) < 7 || res.country === 'GBR')
+    )
+    for (let i = 0; i < data.length; i += 1) {
+      switch (data[i].pos) {
+        case '1':
+        case '2':
+        case '3':
+          html += `<div><img src="/images/flags/${data[i].pos}.svg"></div>`
+          break
+        default:
+          html += `<div>${data[i].pos}</div>`
+      }
+      html += `<div>${data[i].name}</div><div>${
+        data[i].country
+      }</div><div><img src="/images/flags/${data[
+        i
+      ].country.toLowerCase()}.png"></div>`
+      html += `<div>${data[i].time}</div >`
+      if (race === 'Mixed') {
+        html += '<div></div>'
+      } else {
+        html += `<div>${data[i].down}%</div>`
+      }
+    }
+
+    html += '</div>'
+    return html
+  }
 
   async function bannerShortcode(filename, alt, sizes) {
     const src = './src/images/' + filename
@@ -56,6 +92,7 @@ module.exports = (config) => {
 
   config.addNunjucksAsyncShortcode('banner', bannerShortcode)
   config.addNunjucksAsyncShortcode('image', imageShortcode)
+  config.addShortcode('sprintResult', sprintResultShortcode)
 
   config.addFilter('dateDisplay', require('./filters/date-display.js'))
   config.addFilter('slugifyTag', require('./filters/slugify-tag.js'))

@@ -206,3 +206,18 @@ td {
   background: url(/images/oflag.png);
   filter: opacity(70%);
 }
+
+.result-table {
+  display: grid;
+  grid-template-columns:
+    minmax(1rem, 3rem) minmax(5rem, 15rem) minmax(2rem, 4rem)
+    minmax(2rem, 5rem) minmax(2rem, 6rem) minmax(2rem, 3rem);
+}
+
+.result-table img {
+  border: none;
+}
+
+#map-image {
+  float: none;
+}
