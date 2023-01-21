@@ -25,7 +25,11 @@ module.exports = (config) => {
         default:
           html += `<div>${data[i].pos}</div>`
       }
-      html += `<div>${data[i].name}</div><div>${data[i].country}</div><div><img src="/images/flags/${data[i].country}.png"></div>`
+      html += `<div>${data[i].name}</div><div>${
+        data[i].country
+      }</div><div><img src="/images/flags/${data[
+        i
+      ].country.toLowerCase()}.png"></div>`
       html += `<div>${data[i].time}</div >`
       if (race === 'Mixed') {
         html += '<div></div>'
