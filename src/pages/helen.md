@@ -1,71 +1,39 @@
 ---
 title: Helen Errington
-date: 2016-10-20T18:24:42+00:00
+date: 2023-07-02T18:24:42+00:00
 author: simon
 layout: post
 permalink: /helen/
 ---
 
-![Helen orienteering](/images/helenerrington.jpeg 'Helen orienteering') Helen started orienteering in 1984, and since then has competed regularly both in Great Britain and overseas. She has won a number of JK and British Championships Relay titles with LOK and HH, and is a leading competitor in W55 in the South East. She is one of the most experienced event organisers in the south east, and was JK co-ordinator in 2014 and organiser of the British Schools Championships in Watford in 1999 and in Hertford in 2010. She was the British Orienteering Regional Development Officer for North London, Hertfordshire, Essex, Bedfordshire and southern Cambridgeshire from 2007 to 2012. In 2010 she also took up the post of Event Manager for all major British Orienteering events.
-
-## Relevant Qualifications/approvals
-
-2005 OCR RSA Trainer Award gained though Girlguiding UK
-
-2005 REC 16 Hour Mountain First Aid certificate renewed.
-
-2004 British Sports Trust CSLA approved Tutor
-
-2004 British Sports Trust Approved Course Manager/tutor & assessor for BELA
-
-2003 BOF Tutor/assessor Level 1 & 2
-
-2003 Girlguiding UK approved Trainer/ assessor levels 1, 2, 3 Walking scheme
-
-2002 BOF Level 2 coach
-
-2002 Mountain Leader Certificate (Summer)
-
-1989 Cert Ed (FE)
-
-## Orienteering Roles
-
-2010 - 2014 BOF Major Events Manager
-
-2007 - 2010 BOF Regional Development Officer for North London, Hertfordshire, Essex, Bedfordshire and southern Cambridgeshire
-
-2001 – 2004 HH Fixtures Secretary
-
-1987 – 1997 LOK Fixtures Secretary, LOK Chairman and SEOA Fixtures Secretary.
-
-## Main Events Organised and Planned
-
-2017 JK Sprint Day Organiser at Brunel University
-
-2014 JK Co-ordinator for JK in South Wales
-
-2013 Organised St Albans City Race
-
-2010 Organised British Schools Champs at Broxbourne
-
-2008 Assistant Co-ordinator for JK in the South East
-
-2007 Organiser of Railsport GB USIC Orienteering Champs
-
-2005 Race Director World Cup Middle Race & Surrey Five O Leith Hill.
-
-2005 World Cup Event Co-ordinator
-
-2003 Organised HH Badge Event at Burnham Beeches
-
-2000 Organised Panathlon Finsbury Park
-
-2000 Organised CompassSport Cup Leith Hill
-
-1999 Organised British Schools Champs at Watford
-
-1996 Planned LOK Badge Event Holmbury
-
-1993 Organised LOK National Event on Leith Hill
-
-(plus organising numerous Saturday Series events, Colour Coded events and evening trainings events)
+Helen was born in Woking and grew up in leafy Surrey which gave her an early introduction to Guides, camping and hiking, all of which became life-long passions. She studied Business Studies and Marketing at Cambridgeshire College of Arts and Technology which allowed her to become a member of Cambridge University Scout and Guide Club. This involved numerous trips away to the Lakes, Scotland and anywhere mountainous, and gave Helen an early chance to demonstrate her organisational skills. Her time in CUSAG culminated with an epic and oft-remembered expedition to Peru and Bolivia where she collected poo samples from bemused villagers for a study of parasitic infection, as well as fitting in a trip to Machu Pichu.\
+\
+After College she worked as a Housing Officer in Kent. She decided that orienteering was the thing to replace trips to the distant mountains and joined SAXONS. She moved to London and joined LOK in 1987, and took up a job as a lecturer in housing at Hackney Community College, later moving to work in Estates Management and being responsible for moving the college to a new campus. She studied for a PGCE whilst lecturing, and followed that with a degree in law from the University of East London, done in evening classes over four years whilst holding down a full-time job.\
+\
+A nucleus of hard-core orienteers developed within LOK that went to just about every event they could. By this stage Helen was running W21E, but was also seen on M21L at several Scottish 6-Days giving the boys a run for their money, as well as managing numerous mountain marathons. There were memorable trips to events including APOC in Canada and the USA in 1990, the World Championships in Czechoslovakia in 1991, and APOC in New Zealand in 1994. At the same time she took on the role of LOK Fixtures Secretary which soon became SEOA Fixtures Secretary and later HH Fixtures Secretary. She had already become the go-to person for organizing large events within LOK, starting with a National Event at Leith Hill in 1993.\
+\
+She was still active in Guiding and ran a Guide Pack in Tottenham as well as being Girl Guide Walking Adviser for London and the South East. This made her the obvious person to take up a place on “Le Walk” in February 1994, the ultimate sponsored walk involving a ferry to Calais followed by a day of live TV coverage as she walked the 31 miles from France back to England through the Channel Tunnel in the company of various celebrities of the time including Daley Thompson, Graham Gooch and Nigel Havers. You can still see her name on the plaque at the Eurotunnel Terminal at Folkestone.\
+\
+The orienteering adventures continued. Four of us (including a non-orienteering work colleague of Helen’s) spent two unforgettable weeks on a boat travelling around the Moscow canal and the Volga at what was meant to be a 10-day event. Each day we would get off the boat, run a race (even if only seven eventually took place) and then get a guided tour of whatever town we had ended up in. Next up was APOC in Hong Kong which I decided would best be done by train. Get on in Woking, spend two weeks taking in Brussels, Moscow, the trans-Siberian railway via Ulan Bator in Outer Mongolia to China, three days in Beijing for the Great Wall, Tiananmen Square and the Forbidden Palace, another day on a train to a 3-Day orienteering event in Guangzhou and a final train to Hong Kong to arrive just in time for APOC.\
+\
+We got married in July 1986 with many orienteers attending the wedding. Our honeymoon included a trip to Niagara Falls, but luckily this lay on the route between the Canadian Championships in Ottawa and a multi-day event in Harriman State Park north of New York so we got in 13 orienteering races as well, one of which included an infamous battle with a swarm of hornets halfway round.\
+\
+We moved to Hertfordshire in 1997 just in time for James to be born in Watford, followed by Peter in 1999. Peter has Down’s Syndrome and his early years were full of hospital trips for heart and eye problems, but Helen was determined that we would just keep going normally, or at least normally for her. As a family we travelled around the UK and the world, seeing wonderful places and having many great adventures.\
+\
+Competitively she was a very competent orienteer and won regular medals at SEOA and Southern Championships and was HH Women’s champion three times and Veteran Women’s champion six times. We eventually switched from LOK to HH in 2000 and this set her up for multiple relay medals with Janet Rosen, Alison Harding and Maire Convery at the JK and British Championships, including British titles in 2004 and 2005 and JK titles in 2003 and 2018. She competed in at least 25 countries, including exotic locations such as Australia, Ukraine, Latvia, Romania and Iceland. My career in the railway industry allowed us to run as part of the GB Team in events in Switzerland, London, Denmark, the Czech Republic and Belarus. Many people will have encountered her infectious enthusiasm as she discussed the day’s course and how things had gone.\
+\
+Her real strength was in organisation and she put on events at all levels, from the smallest training courses for school children and club juniors, through British Championships and JKs, all the way up to World Cup races. She organized the British Schools Orienteering Championships for HH in 1999, despite still being a member of LOK. That was at Whippendell and Cassiobury and featured an all-female team of Helen as Organiser, Janet Rosen as Planner and Jackie Pett as Controller. She organized the British Schools Champs again in 2010 at Wormley Woods, the Middle Race on Leith Hill at the 2005 World Cup in Guildford, she was JK Co-ordinator in 2014 and 2017, and she had all but organized the British Championships in 2020 before they had to be cancelled at one week’s notice because of Covid. All of this experience made her the perfect candidate for a series of British Orienteering Federation jobs, starting as a Regional Development Officer in 2007 and ending as Major Event Consultant. She was behind the scenes providing pragmatic advice and solving problems in some capacity or other at nearly every major event in the last 10 years. She won the Harding Trophy for services to HH in 2000 and 2016.\
+\
+But as well as orienteering she was active in many other areas. Peter provided her with an introduction to the world of special educational needs and learning disabilities, and she took on various roles with Hertfordshire Parent Carer Involvement, eventually becoming Chair. She also volunteered with Special Olympics and at Chickenshed Theatre where Peter did his degree in performing arts. She continued helping in various roles in scouting and guiding, and when James couldn’t get into a Venture Scout unit she started a new one and ran it. She was a trainer and assessor for the Duke of Edinburgh Award Scheme and supervised many hundreds of school children as they ranged around Hertfordshire and further afield on expeditions. She was very proud that James and Peter both got their Gold D of E awards, as well as both becoming Queen’s Scouts.\
+\
+She was a keen gardener and her allotment provided a seemingly endless supply of vegetables to be shared with friends when we couldn’t eat any more. It is, of course, the allotment used to film the recent BBC series of Worzel Gummidge. Any remaining spare time would be taken up with reading, Formula One, singing, sewing (she made her own wedding dress), cats, family camping trips, walking and endless cups of tea and conversations with her many friends.\
+\
+To replace orienteering during the Covid lockdown we decided to run the Hertfordshire Way, covering over 600km in 30 memorable days spread over six months. Unsurprisingly she also found time to volunteer at a vaccination clinic, taking on an organizing role and finally stopping after her 100th day. As things gradually got back to near normal she decided that the next challenge was to run the length of Offa’s Dyke along the Welsh border. She and Sue Skinner (WCOC) got from Chepstow to Llangollen in nine days but injury forced her to stop with just 60km to go.\
+\
+Then in October 2021 she was diagnosed with breast cancer and set out on six months of chemotherapy, radiotherapy and surgery. She was adamant that she would keep as active as possible, and began a virtual walk of the 870 miles of the Welsh Coast Path, aiming to do it in a year. She ran or walked every day with friends and family including one memorable day after returning from a chemo session when we set out round the local park in light drizzle which gradually turned to very heavy rain which she found hilarious.\
+\
+It seemed that all the treatment had been successful and she began to get back to competitive orienteering, as well as all the normal array of volunteering. She ran a 10km race in Central London with Peter in aid of Chickenshed, and having got close to the end of the Welsh Coast Path we did the final 20km in August 2022 as a run around the Welwyn Garden City Centenary Loop. She went as assistant cook to Lagganlia and she led a training team at the Hertfordshire Scouts Peak Assault on Dartmoor. Competitively she was SEOA Long Distance W60 champion and was orienteering well enough to be named as a reserve on W60 for the England Interland Team.\
+\
+Then in the middle of January 2023 she was diagnosed with a recurrence of breast cancer. Things progressed unbelievably fast and she died peacefully at home just six weeks later. Her funeral was attended by a large number of orienteers from all over the country who were amazed to find out quite how much she had packed into her life apart from orienteering. One of the few ambitions she failed to reach was to be British Champion; she always had her eye on W90, which she joked would require her to be the last woman standing. Sadly that was not to be, but we will remember her long list of remarkable achievements with immense pride.\
+\
+![Helen orienteering](/images/helenerrington.jpeg 'Helen orienteering')
