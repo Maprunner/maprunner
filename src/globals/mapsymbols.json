@@ -1,7 +1,7 @@
 {
   "specs": [
     {
-      "title": "Normal (ISOM 2017-2)",
+      "title": "Normal (ISOM 2017-2 R6)",
       "intro": "The ISOM 2017-2 map symbols are used for normal orienteering maps, generally at 1:10,000 or 1:15,000.",
       "alt": "Maprunner map symbols guide",
       "src": "/images/map-symbols-thumb.gif",
@@ -17,7 +17,7 @@
       "pdf": "../resources/Maprunner-schools-map-symbols.pdf"
     },
     {
-      "title": "Sprint (ISSprOM 2019-2)",
+      "title": "Sprint (ISSprOM 2019-2 R6)",
       "intro": "The ISSprOM 2019-2 sprint map symbols are used for sprint orienteering maps at 1:4,000.",
       "alt": "Maprunner ISSOM 2019-2 sprint map symbols guide",
       "src": "/images/sprint-map-symbols-thumb.gif",
