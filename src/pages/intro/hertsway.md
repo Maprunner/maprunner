@@ -1,6 +1,6 @@
 ---
 tags: frontpost
-order: 2
+order: 7
 title: Hertfordshire Way
 image: hway-sign.jpeg
 button: false

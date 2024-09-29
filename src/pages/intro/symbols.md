@@ -1,6 +1,6 @@
 ---
 tags: frontpost
-order: 4
+order: 2
 title: Map symbols
 image: mapsymbols.jpeg
 button: 'Download'
