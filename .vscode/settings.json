@@ -7,10 +7,14 @@
     "editor.defaultFormatter": "eseom.nunjucks-template"
   },
   "spellright.documentTypes": [
-  
     "markdown",
     "latex",
     "plaintext"
   ],
-  "css.validate": false
+  "files.associations": {
+    "src/styles/base.css": "css"
+  },
+  "editor.semanticHighlighting.enabled": true,
+  "editor.colorDecorators": true,
+  "css.validate": true
 }

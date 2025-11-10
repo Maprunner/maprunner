@@ -8,7 +8,7 @@
 
 html,
 body {
-  @apply antialiased bg-gray-100 text-gray-900 dark:text-gray-500 dark:bg-gray-900;
+  @apply antialiased bg-gray-100 text-gray-900 dark:text-gray-100 dark:bg-gray-900;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -49,6 +49,24 @@ nav {
   a:hover {
     @apply underline text-gray-200;
   }
+}
+
+.dropdown > a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  /* right: 15px; */
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid gray;
+}
+
+.dropdown:hover > div {
+  display: flex;
+  z-index: 10;
 }
 
 div {
@@ -163,25 +181,6 @@ td {
   img {
     @apply h-auto w-full object-cover rounded-lg shadow-md;
   }
-}
-
-/* Menus */
-.dropdown > a:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  /* right: 15px; */
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid gray;
-}
-
-.dropdown:hover > div {
-  display: flex;
-  z-index: 10;
 }
 
 .avatar {
