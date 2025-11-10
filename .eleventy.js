@@ -1,11 +1,45 @@
-module.exports = (config) => {
-  const siteSettings = require('./src/globals/site.json')
-  const pluginSafeExternalLinks = require('eleventy-plugin-safe-external-links')
-  const eleventyNavigationPlugin = require('@11ty/eleventy-navigation')
-  const sprintdata = require('./src/globals/sprintdata.json')
-  const excerpt = require('eleventy-plugin-excerpt')
-  const Image = require('@11ty/eleventy-img')
-  const path = require('path')
+import siteSettings from './src/globals/site.json' with { type: 'json' }
+import pluginSafeExternalLinks from 'eleventy-plugin-safe-external-links'
+import eleventyNavigationPlugin from '@11ty/eleventy-navigation'
+import sprintdata from './src/globals/sprintdata.json' with { type: 'json' }
+import excerpt from 'eleventy-plugin-excerpt'
+import Image from '@11ty/eleventy-img'
+import path from 'path'
+import fs from 'fs'
+import cssnano from 'cssnano'
+import postcss from 'postcss'
+import tailwindcss from '@tailwindcss/postcss'
+
+export default async function (config) {
+  //compile tailwind before eleventy processes the files
+  config.on('eleventy.before', async () => {
+    const tailwindInputPath = path.resolve('./src/styles/maprunner.css')
+
+    const tailwindOutputPath = './dist/assets/maprunner.css'
+
+    const cssContent = fs.readFileSync(tailwindInputPath, 'utf8')
+
+    const outputDir = path.dirname(tailwindOutputPath)
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true })
+    }
+
+    const result = await processor.process(cssContent, {
+      from: tailwindInputPath,
+      to: tailwindOutputPath,
+    })
+
+    fs.writeFileSync(tailwindOutputPath, result.css)
+  })
+
+  const processor = postcss([
+    tailwindcss(),
+
+    //minify tailwind css
+    cssnano({
+      preset: 'default',
+    }),
+  ])
 
   function sprintResultShortcode(year, race) {
     let html = '<div class="result-table">'
@@ -57,10 +91,7 @@ module.exports = (config) => {
       },
     })
 
-    let imageAttributes = {
-      alt,
-      sizes,
-    }
+    let imageAttributes = { alt, sizes }
 
     return Image.generateHTML(metadata, imageAttributes)
   }
@@ -94,12 +125,12 @@ module.exports = (config) => {
   config.addNunjucksAsyncShortcode('image', imageShortcode)
   config.addShortcode('sprintResult', sprintResultShortcode)
 
-  config.addFilter('dateDisplay', require('./filters/date-display.js'))
-  config.addFilter('slugifyTag', require('./filters/slugify-tag.js'))
+  config.addFilter(
+    'dateDisplay',
+    (await import('./filters/date-display.js')).default
+  )
   config.addPlugin(eleventyNavigationPlugin)
-  config.addPlugin(excerpt, {
-    excerptSeparator: '<!--more-->',
-  })
+  config.addPlugin(excerpt, { excerptSeparator: '<!--more-->' })
   config.addPlugin(pluginSafeExternalLinks, {
     pattern: 'https{0,1}://', // RegExp pattern for external links
     noopener: true, // Whether to include noopener
@@ -109,7 +140,6 @@ module.exports = (config) => {
       '.html',
     ],
   })
-
   config.addShortcode('currentYear', function () {
     return new Date().getFullYear().toString()
   })
@@ -119,11 +149,9 @@ module.exports = (config) => {
   config.addPassthroughCopy('src/fonts')
   config.addPassthroughCopy('src/data')
   config.addPassthroughCopy('src/resources')
+  config.addPassthroughCopy('src/scripts/main.js')
 
-  config.setBrowserSyncConfig({
-    files: ['dist/**/*'],
-    open: true,
-  })
+  config.setBrowserSyncConfig({ files: ['dist/**/*'], open: true })
 
   config.setDataDeepMerge(true)
 

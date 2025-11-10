@@ -17,8 +17,8 @@
         {% for item in nav.main %}
           {% if item.dropdown %}
             <div class="dropdown">
-              <a href="#" class="relative block p-4 text-base text-teal-500 font-bold hover:bg-blue-800 hover:text-white hover:underline">{{ item.label }}</a>
-              <div class="hidden flex-col absolute bg-blue-800 text-gray-300">
+              <a href="#" class="relative block p-4 text-base text-teal-500 font-bold hover:bg-blue-600 hover:text-white hover:underline">{{ item.label }}</a>
+              <div class="hidden flex-col absolute bg-blue-600 text-gray-300>
                 {% for link in item.dropdown %}
                   <a href="{{ link.link }}" target="_blank" class="block p-2 hover:bg-blue-600 text-white hover:underline">{{ link.title }}</a>
                 {% endfor %}

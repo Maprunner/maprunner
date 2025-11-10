@@ -13,7 +13,7 @@
             {% if tag !== "tag" %}
               {% if tag !== "post" %}
                 {% if tag !== "article" %}
-                  <a href="{{ site.baseUrl }}tag/{{ tag | slugifyTag }}"><span class="tag">{{ tag }}</span></a>
+                  <a href="{{ site.baseUrl }}tag/{{ tag | slugify }}"><span class="tag">{{ tag }}</span></a>
                 {% endif %}
               {% endif %}
             {% endif %}

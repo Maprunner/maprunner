@@ -115,7 +115,7 @@ thead {
   @apply bg-gray-300 dark:bg-gray-800;
 }
 tbody tr:nth-child(even) {
-  @apply bg-gray-300 dark:bg-gray-800;
+  @apply bg-gray-333 dark:bg-gray-800;
 }
 th {
   @apply px-2 py-2 border-2 border-gray-700;

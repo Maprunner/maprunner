@@ -3,9 +3,12 @@
   "description": "Orienteering courses and resources",
   "url": "https://www.maprunner.co.uk",
   "baseUrl": "/",
-  "github": { "user": "Maprunner/maprunner" },
-  "twitter": { "user": "MaprunnerGB" },
-  "facebook": { "user": "Maprunner.co.uk" },
+  "github": {
+    "user": "Maprunner/maprunner"
+  },
+  "facebook": {
+    "user": "Maprunner.co.uk"
+  },
   "author": {
     "name": "Simon Errington"
   }

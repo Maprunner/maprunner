@@ -67,7 +67,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/articles/'}}{{ title | s
         <div class="my-4">
           {% for tag in tags %}
             {% if tag !== "article" %}
-              <a href="{{ site.baseUrl }}tag/{{ tag | slugifyTag }}"><span class="tag">{{ tag }}</span></a>
+              <a href="{{ site.baseUrl }}tag/{{ tag | slugify }}"><span class="tag">{{ tag }}</span></a>
             {% endif %}
           {% endfor %}
         </div>
