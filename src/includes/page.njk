@@ -17,7 +17,6 @@
     <meta property="og:description" content="{% if excerpt %}{{ excerpt }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:image" content="{{ site.url }}{{ site.baseUrl }}{{ ogimage }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url | url }}">
-    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:site_name" content="{{ site.name }}">
     <meta name="twitter:image:alt" content="World Cup orienteering at Battersea Park">
 
@@ -32,16 +31,16 @@
         |
       {% endif %}{{ site.name }}</title>
 
-    <link rel="stylesheet" href="{{ site.baseUrl }}assets/main.bundle.css">
+    <link rel="stylesheet" href="{{ site.baseUrl }}assets/maprunner.css">
     {% block head %}{% endblock %}
   </head>
   <body class="flex flex-col min-h-screen">
 
     {% include 'header.njk' %}
-    <main class="container mx-auto max-w-screen-xl px-4 md:px-8 pb-4 md:pb-8 flex-grow">
+    <main class="container mx-auto max-w-(--breakpoint-xl) px-4 md:px-8 pb-4 md:pb-8 grow">
       {% block body %}{% endblock %}
     </main>
     {% include 'footer.njk' %}
-    <script src="{{ site.baseUrl }}assets/main.bundle.js"></script>
+    <script src="{{ site.baseUrl }}scripts/main.js" type="module"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 ---
-tags: frontpost
-order: 5
+tags: frontlink
+order: 2
 title: Arbor British results database
 image: results.jpeg
 button: 'Search database'

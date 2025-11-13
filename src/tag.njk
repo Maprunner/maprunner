@@ -11,7 +11,7 @@ pagination:
     - frontpost
 eleventyComputed:
   title: "{{ tag }}"
-permalink: /tag/{{ tag | slugifyTag }}/
+permalink: /tag/{{ tag | slugify }}/
 ---
 
 {% extends 'page.njk' %}

@@ -44,7 +44,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/articles/'}}{{ title | s
         </p>
       {% endif %}
     </div>
-    <div class="w-full lg:w-3/12 p-4 bg-gray-400 dark:bg-gray-800">
+    <div class="w-full lg:w-3/12 p-4 bg-gray-300 dark:bg-gray-800">
       <div class="author">
         <img src="/images/{{ who.avatar }}" alt="{{ who.name }}">
         <div class="flex my-4">
@@ -67,7 +67,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/articles/'}}{{ title | s
         <div class="my-4">
           {% for tag in tags %}
             {% if tag !== "article" %}
-              <a href="{{ site.baseUrl }}tag/{{ tag | slugifyTag }}"><span class="tag">{{ tag }}</span></a>
+              <a href="{{ site.baseUrl }}tag/{{ tag | slugify }}"><span class="tag">{{ tag }}</span></a>
             {% endif %}
           {% endfor %}
         </div>

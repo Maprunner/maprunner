@@ -10,7 +10,7 @@ permalink: "tags/"
   {% set maxWeight = 900 %}
   <ol class="tagscloud">
     {% for tag in collections.tags %}
-      {% set tagUrl %}/tag/{{ tag.tag | slugifyTag }}/{% endset %}
+      {% set tagUrl %}/tag/{{ tag.tag | slugify }}/{% endset %}
       {% set fontSize = (maxSize - minSize) * tag.factor + minSize %}
       {% set fontWeight = (maxWeight - minWeight) * tag.factor + minWeight %}
       <li>
