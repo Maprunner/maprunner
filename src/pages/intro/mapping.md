@@ -1,6 +1,6 @@
 ---
 tags: frontpost
-order: 4
+order: 3
 title: Mapping
 image: highfield.jpeg
 button: 'Read more'

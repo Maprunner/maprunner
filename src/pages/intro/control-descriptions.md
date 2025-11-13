@@ -1,10 +1,10 @@
 ---
 tags: frontpost
-order: 3
+order: 2
 title: Control descriptions
 image: iofcondesc.jpeg
 button: 'Download'
-link: 'iof-control-descriptions/'
+link: 'https://www.maprunner.co.uk/iof-control-descriptions/'
 ---
 
-Download your own copy of the Maprunner IOF pictorial control description 2024 guide.
+Try the Maprunner IOF Control Description Quiz.

@@ -1,6 +1,6 @@
 ---
-tags: frontpost
-order: 6
+tags: frontlink
+order: 1
 title: WOC/JWOC database
 image: wocdb.jpeg
 button: 'Search database'

@@ -16,7 +16,7 @@ and are designed for printing at A3 or A4 size. If you are having trouble then t
 
     {% for spec in mapsymbols.cds %}
 
-      <div class="flex flex-col flex-1 px-4 py-4 bg-gray-400 dark:bg-gray-800 rounded-lg shadow-lg">
+      <div class="flex flex-col flex-1 px-4 py-4 bg-gray-300 dark:bg-gray-800 rounded-lg shadow-lg">
         <h3 class="text-center">{{ spec.title }}</h3>
         <img class="mx-auto my-4" width="200px" src={{ spec.src }} alt={{ spec.alt }}></img>
         <a href="{{ spec.gif }}" class="text-center">Download GIF</a>

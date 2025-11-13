@@ -162,6 +162,13 @@ export default async function (config) {
     })
   })
 
+  config.addCollection('frontlinks', function (collectionApi) {
+    // get links to show on front page
+    return collectionApi.getFilteredByTag('frontlink').sort(function (a, b) {
+      return a.data.order - b.data.order
+    })
+  })
+
   config.addCollection('tags', function (collectionApi) {
     let tagsCollection = new Map()
     let max = 0

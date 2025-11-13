@@ -1,9 +1,10 @@
 ---
-tags: frontpost
+tags: frontlink
 order: 7
 title: Hertfordshire Way
 image: hway-sign.jpeg
-button: false
+button: 'Visit site'
+link: 'https://www.maprunner.co.uk/hertsway'
 ---
 
-Between October 2020 and March 2021 we ran the Hertfordshire Way. Read all about it at <a href="https://www.maprunner.co.uk/hertsway">There and back on the Hertfordshire Way</a>.
+Between October 2020 and March 2021 Helen and Simon Errington ran the Hertfordshire Way. This is the story of their travels.
