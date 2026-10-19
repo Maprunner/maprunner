@@ -47,7 +47,7 @@ export default async function (config) {
       (res) =>
         parseInt(res.year, 10) === year &&
         res.race === race &&
-        (parseInt(res.pos, 10) < 7 || res.country === 'GBR')
+        (parseInt(res.pos, 10) < 7 || res.country === 'GBR'),
     )
     for (let i = 0; i < data.length; i += 1) {
       switch (data[i].pos) {
@@ -127,7 +127,7 @@ export default async function (config) {
 
   config.addFilter(
     'dateDisplay',
-    (await import('./filters/date-display.js')).default
+    (await import('./filters/date-display.js')).default,
   )
   config.addPlugin(eleventyNavigationPlugin)
   config.addPlugin(excerpt, { excerptSeparator: '<!--more-->' })
@@ -176,7 +176,12 @@ export default async function (config) {
     collectionApi.getAll().forEach(function (item) {
       if ('tags' in item.data) {
         for (const tag of item.data.tags) {
-          if (tag !== 'post' && tag !== 'article' && tag !== 'frontpost') {
+          if (
+            tag !== 'post' &&
+            tag !== 'article' &&
+            tag !== 'frontpost' &&
+            tag !== 'frontlink'
+          ) {
             let number = (tagsCollection.get(tag) || 0) + 1
             max = Math.max(max, number)
             tagsCollection.set(tag, number)
