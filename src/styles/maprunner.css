@@ -130,23 +130,23 @@
     }
 
     a.tag1 {
-      @apply bg-green-900;
+      @apply bg-green-900 font-light text-sm;
     }
 
     a.tag2 {
-      @apply bg-green-800;
+      @apply bg-green-800 font-normal text-base;
     }
 
     a.tag3 {
-      @apply bg-green-700;
+      @apply bg-green-700 font-semibold text-lg;
     }
 
     a.tag4 {
-      @apply bg-green-600;
+      @apply bg-green-600 font-bold text-xl;
     }
 
     a.tag5 {
-      @apply bg-green-500;
+      @apply bg-green-500 font-black text-2xl;
     }
   }
 
