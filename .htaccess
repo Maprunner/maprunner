@@ -34,3 +34,11 @@ RewriteCond %{HTTP_HOST} ^maprunner\.co\.uk$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.maprunner\.co\.uk$
 RewriteRule ^wp\-content\/uploads\/resources\/?(.*)$ "https\:\/\/www\.maprunner\.co\.uk\/resources\/$1" [R=301,L]
 
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+	Header set X-Frame-Options "SAMEORIGIN"
+	Header set X-Content-Type-Options "nosniff"
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+  Header set Content-Security-Policy "default-src 'self'; font-src 'self' data: https:; style-src https: 'report-sample'; script-src 'self' https://ajax.googleapis.com https://code.jquery.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://cdnjs.cloudflare.com https://unpkg.com 'report-sample'; img-src 'self' data: https://cdn.datatables.net https://*.tile.openstreetmap.org blob: https://unpkg.com 'report-sample';"
+  Header set Cache-Control "private"
+</IfModule>

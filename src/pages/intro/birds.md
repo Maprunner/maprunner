@@ -1,6 +1,6 @@
 ---
 tags: frontlink
-order: 8
+order: 7
 title: British Birds
 image: red-kite.jpeg
 button: 'Visit site'
