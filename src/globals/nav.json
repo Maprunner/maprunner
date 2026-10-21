@@ -12,11 +12,26 @@
           "title": "On The Red Line",
           "link": "https://www.ontheredline.org.uk"
         },
-        { "title": "Open Orienteering Map", "link": "http://oomap.co.uk/" },
-        { "title": "BOF", "link": "http://www.britishorienteering.org.uk/" },
-        { "title": "IOF", "link": "https://orienteering.sport/" },
-        { "title": "HH", "link": "http://www.herts-orienteering.club/" },
-        { "title": "World of O", "link": "http://worldofo.com/" }
+        {
+          "title": "Open Orienteering Map",
+          "link": "http://oomap.co.uk/"
+        },
+        {
+          "title": "BOF",
+          "link": "http://www.britishorienteering.org.uk/"
+        },
+        {
+          "title": "IOF",
+          "link": "https://orienteering.sport/"
+        },
+        {
+          "title": "HH",
+          "link": "http://www.herts-orienteering.club/"
+        },
+        {
+          "title": "World of O",
+          "link": "http://worldofo.com/"
+        }
       ]
     },
     {
@@ -34,6 +49,10 @@
         {
           "title": "BOF Records",
           "link": "https://www.maprunner.co.uk/bof-records/"
+        },
+        {
+          "title": "Simon's archive",
+          "link": "https://www.maprunner.co.uk/events/"
         }
       ]
     },
@@ -53,7 +72,10 @@
           "title": "RG2 statistics",
           "link": "https://www.maprunner.co.uk/rg2-stats/"
         },
-        { "title": "Routegadget UK", "link": "https://www.routegadget.co.uk/" }
+        {
+          "title": "Routegadget UK",
+          "link": "https://www.routegadget.co.uk/"
+        }
       ]
     },
     {
